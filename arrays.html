@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+      let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24];
+      let theAge = ages.sort();
+      console.log(theAge);
+      console.log(theAge[0]);
+
+if (theAge.length % 2 === 0) {
+    console.log((theAge[theAge.length / 2 - 1] + theAge[theAge.length / 2]) / 2);
+} else {
+    console.log(theAge[Math.floor(theAge.length / 2)]);
+}
+//  Average
+let sum = 0;
+for (let i = 0; i < ages.length; i++) {
+    sum += ages[i];
+}
+let averageAge = sum / ages.length;
+console.log(averageAge);
+
+// Range
+
+let range = theAge[theAge.length - 1] - theAge[0]
+console.log(range);
+
+
+let countries = [
+  'Afghanistan',
+  'Albania',
+  'Algeria',
+  'Andorra',
+  'Angola',
+  'Antigua and Barbuda',
+  'Argentina',
+  'Armenia',
+  'Australia',
+  'Austria',
+  'Azerbaijan',
+  'Bahamas',
+  'Bahrain',
+  'Bangladesh',
+  'Barbados',
+  'Belarus',
+  'Belgium',
+  'Belize',
+  'Benin',
+  'Bhutan',
+  'Bolivia',
+  'Bosnia and Herzegovina',
+  'Botswana',
+  'Brazil',
+  'Brunei',
+  'Bulgaria',
+  'Burkina Faso',
+  'Burundi',
+  'Cambodia',
+  'Cameroon',
+  'Canada',
+  'Cape Verde',
+  'Central African Republic',
+  'Chad',
+  'Chile',
+  'China',
+  'Colombi',
+  'Comoros',
+  'Congo (Brazzaville)',
+  'Congo',
+  'Costa Rica',
+  "Cote d'Ivoire",
+  'Croatia',
+  'Cuba',
+  'Cyprus',
+  'Czech Republic',
+  'Denmark',
+  'Djibouti',
+  'Dominica',
+  'Dominican Republic',
+  'East Timor (Timor Timur)',
+  'Ecuador',
+  'Egypt',
+  'El Salvador',
+  'Equatorial Guinea',
+  'Eritrea',
+  'Estonia',
+  'Ethiopia',
+  'Fiji',
+  'Finland',
+  'France',
+  'Gabon',
+  'Gambia, The',
+  'Georgia',
+  'Germany',
+  'Ghana',
+  'Greece',
+  'Grenada',
+  'Guatemala',
+  'Guinea',
+  'Guinea-Bissau',
+  'Guyana',
+  'Haiti',
+  'Honduras',
+  'Hungary',
+  'Iceland',
+  'India',
+  'Indonesia',
+  'Iran',
+  'Iraq',
+  'Ireland',
+  'Israel',
+  'Italy',
+  'Jamaica',
+  'Japan',
+  'Jordan',
+  'Kazakhstan',
+  'Kenya',
+  'Kiribati',
+  'Korea, North',
+  'Korea, South',
+  'Kuwait',
+  'Kyrgyzstan',
+  'Laos',
+  'Latvia',
+  'Lebanon',
+  'Lesotho',
+  'Liberia',
+  'Libya',
+  'Liechtenstein',
+  'Lithuania',
+  'Luxembourg',
+  'Macedonia',
+  'Madagascar',
+  'Malawi',
+  'Malaysia',
+  'Maldives',
+  'Mali',
+  'Malta',
+  'Marshall Islands',
+  'Mauritania',
+  'Mauritius',
+  'Mexico',
+  'Micronesia',
+  'Moldova',
+  'Monaco',
+  'Mongolia',
+  'Morocco',
+  'Mozambique',
+  'Myanmar',
+  'Namibia',
+  'Nauru',
+  'Nepal',
+  'Netherlands',
+  'New Zealand',
+  'Nicaragua',
+  'Niger',
+  'Nigeria',
+  'Norway',
+  'Oman',
+  'Pakistan',
+  'Palau',
+  'Panama',
+  'Papua New Guinea',
+  'Paraguay',
+  'Peru',
+  'Philippines',
+  'Poland',
+  'Portugal',
+  'Qatar',
+  'Romania',
+  'Russia',
+  'Rwanda',
+  'Saint Kitts and Nevis',
+  'Saint Lucia',
+  'Saint Vincent',
+  'Samoa',
+  'San Marino',
+  'Sao Tome and Principe',
+  'Saudi Arabia',
+  'Senegal',
+  'Serbia and Montenegro',
+  'Seychelles',
+  'Sierra Leone',
+  'Singapore',
+  'Slovakia',
+  'Slovenia',
+  'Solomon Islands',
+  'Somalia',
+  'South Africa',
+  'Spain',
+  'Sri Lanka',
+  'Sudan',
+  'Suriname',
+  'Swaziland',
+  'Sweden',
+  'Switzerland',
+  'Syria',
+  'Taiwan',
+  'Tajikistan',
+  'Tanzania',
+  'Thailand',
+  'Togo',
+  'Tonga',
+  'Trinidad and Tobago',
+  'Tunisia',
+  'Turkey',
+  'Turkmenistan',
+  'Tuvalu',
+  'Uganda',
+  'Ukraine',
+  'United Arab Emirates',
+  'United Kingdom',
+  'United States',
+  'Uruguay',
+  'Uzbekistan',
+  'Vanuatu',
+  'Vatican City',
+  'Venezuela',
+  'Vietnam',
+  'Yemen',
+  'Zambia',
+  'Zimbabwe'
+];
+// Minimum Average
+
+let middleIndex = Math.floor(countries.length / 2);
+let averageValue = countries[middleIndex];
+let miniValue = countries[0];
+let maxiValue = countries[countries.length - 1];
+let minusAverage = Math.abs(countries.indexOf(miniValue) - middleIndex);
+let maxusAverage = Math.abs(countries.indexOf(maxiValue) - middleIndex);
+
+console.log("Average value=" + averageValue);
+console.log("Minimum value=" + miniValue);
+console.log("Maximum value=" + maxiValue);
+console.log("Minimum and average=" + minusAverage);
+console.log("Maximum and average=" + maxusAverage);
+
+// Find the middle country
+
+let middleIndex1 = Math.floor(countries.length / 2);
+let middleCountries = countries.slice(middleIndex1 - 1, middleIndex1 + 1);
+
+console.log(middleCountries);
+
+// Divide
+
+
+let halfLength = Math.floor(countries.length / 2);
+let firstHalf = countries.slice(0, halfLength);
+let secondHalf = countries.slice(halfLength, countries.length);
+
+console.log("First half:", firstHalf);
+console.log("Second half:", secondHalf);
+
+
+
+
+    // let ages = [19, 22, 19, 24, 20, 25, 26, 24, 25, 24]
+    // let theage = ages.sort()
+    // console.log(theage);
+    // console.log(theage[0]);
+   
+    // if (theage.lenght % 2 == 0) {
+    //     console.log((ages[(theage.lenght/2)-1] + theage[(theage.lenght/2)])/2);
+    // }
+ 
+//  if (age) {
+    
+//  }
+    
+</script>

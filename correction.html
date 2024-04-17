@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    let dan = [20, 22, 21, 25, 26, 24, 29, 27, 28, 23]
+    let newdan = dan.sort()
+    console.log(newdan);
+    console.log(newdan[0]);
+
+    if (newdan.lenght % 2 === 0) {
+        console.log((newdan[newdan.lenght / 2 - 1] + newdan[newdan.length / 2] ) /2 );
+    }else {
+        console.log(newdan[Math.floor(newdan.length / 2)]); 
+    }
+</script>
